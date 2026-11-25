@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr. Fawad Nasir, MD | Internal Medicine Physician</title>
+<meta name="description" content="Dr. Fawad Nasir, MD, ECFMG certified internal medicine physician in Peshawar. Services, credentials, downloadable CV, and online appointment requests.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#0f4c3a; --green2:#176b52; --mint:#d9efe6; --sage:#eef5f1; --bg:#f7faf8; --card:#fff; --ink:#15271f; --muted:#556a60; --line:#d5e3dc; --gold:#c8962d; --alert:#b3392a; --on:#fff;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:"Manrope",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  color-scheme:light;box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--green:#7fd0b0;--green2:#a6e3cb;--mint:#16382d;--sage:#0f211a;--bg:#0b1812;--card:#12261e;--ink:#e6f2ec;--muted:#9bb5a9;--line:#244438;--gold:#e1b552;--alert:#ef8c7c;--on:#06231a;color-scheme:dark}}
+:root[data-theme="dark"]{--green:#7fd0b0;--green2:#a6e3cb;--mint:#16382d;--sage:#0f211a;--bg:#0b1812;--card:#12261e;--ink:#e6f2ec;--muted:#9bb5a9;--line:#244438;--gold:#e1b552;--alert:#ef8c7c;--on:#06231a;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16.5px/1.7 var(--sans)}
+a{color:var(--green2)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+.skip-link{position:absolute;top:8px;left:8px;z-index:10;transform:translateY(-150%);padding:8px 12px;border-radius:6px;background:var(--card);color:var(--ink)}
+.skip-link:focus{transform:translateY(0)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.18;margin:0}
+h2{font-size:clamp(1.7rem,3.4vw,2.2rem);margin-bottom:.45em}
+h3{font-size:1.15rem}
+p{margin:0 0 1em;max-width:66ch}
+.btn{display:inline-block;font:700 .97rem var(--sans);padding:12px 22px;border-radius:8px;border:1.5px solid var(--green);background:var(--green);color:var(--on);text-decoration:none;cursor:pointer;text-align:center}
+.btn:hover{filter:brightness(1.12)}
+.btn.out{background:transparent;color:var(--green)}
+.btn.out:hover{background:var(--mint);filter:none}
+
+.shell{display:grid;grid-template-columns:310px 1fr;min-height:100vh}
+aside.side{position:sticky;top:0;align-self:start;height:100vh;overflow:auto;background:var(--green);color:#fff;padding:calc(env(safe-area-inset-top,0px) + 30px) 26px 26px;display:flex;flex-direction:column;gap:20px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) aside.side{background:#0e2a20;color:#e6f2ec}}
+.mono{width:76px;height:76px;border-radius:50%;background:#ffffff1f;border:2px solid var(--gold);display:grid;place-items:center;font:600 1.7rem var(--serif);color:#fff}
+.side h1{font-size:1.65rem;color:#fff}
+.side .role{margin:4px 0 0;color:#bfe3d3;font-weight:500}
+.side nav ul{list-style:none;margin:0;padding:0}
+.side nav a{display:block;color:#dcefe6;text-decoration:none;font-weight:500;padding:7px 0;border-bottom:1px solid #ffffff1c;font-size:.95rem}
+.side nav a:hover{color:#fff;padding-left:4px}
+.side .btn{background:var(--gold);border-color:var(--gold);color:#1f1603}
+.side .meta{font-size:.88rem;color:#bfe3d3;margin-top:auto}
+.side .meta a{color:#fff}
+
+main{min-width:0}
+section{padding:64px clamp(22px,5vw,64px);max-width:980px}
+#overview{max-width:none;background:linear-gradient(135deg,#0f4c3a,#176b52);color:#fff}
+#overview h2,#overview .lead,#overview .fact b{color:#fff}
+#overview p:not(.lead){color:#e2f1e9}
+#overview .fact{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.28)}
+#overview .fact span{color:#d5eadf}
+section.alt{background:var(--sage);max-width:none}
+section.alt>div{max-width:900px}
+.lead{font:400 1.3rem/1.55 var(--serif);max-width:34em;margin-bottom:1em}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:30px 0 0}
+.fact{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+.fact b{display:block;font:600 1.15rem var(--serif);line-height:1.25}
+.fact span{font-size:.85rem;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px}
+.card h3{margin-bottom:.4em;color:var(--green)}
+.card p{margin:0;color:var(--muted);font-size:.96rem}
+.cvbox{display:flex;gap:28px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:12px;padding:28px}
+.cvbox p{margin:0 0 .4em}
+.cvmsg{margin-top:12px;font-size:.92rem;color:var(--muted)}
+.row{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:24px 0;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:2px solid var(--ink)}
+.row .when{font-weight:700;color:var(--green2)}
+.row .sub{color:var(--muted);margin:.3em 0 .8em}
+ul.plain{margin:0;padding-left:1.15em}ul.plain li{margin-bottom:.45em;max-width:66ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:4px 14px;font-size:.88rem;font-weight:600}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.two h3{margin:0 0 10px}.two ul{margin-bottom:26px}
+
+/* booking */
+.book{display:grid;grid-template-columns:1fr;gap:26px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:26px}
+.panel h3{margin-bottom:4px}.panel .hint{color:var(--muted);font-size:.92rem;margin:0 0 14px}
+.days,.slots{display:flex;flex-wrap:wrap;gap:8px}
+.pick{font:600 .92rem var(--sans);border:1.5px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;padding:9px 14px;cursor:pointer;min-width:84px;text-align:center;line-height:1.3}
+.pick small{display:block;font-weight:500;color:var(--muted);font-size:.78rem}
+.pick:hover:not(:disabled){border-color:var(--green2)}
+.pick[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:var(--on)}
+.pick[aria-pressed="true"] small{color:inherit}
+.pick:disabled{opacity:.45;cursor:not-allowed;text-decoration:line-through}
+.sel{margin-top:14px;font-weight:700;color:var(--green)}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-weight:700;font-size:.9rem;margin-bottom:5px}
+input,select,textarea{width:100%;font:400 1rem var(--sans);color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:7px;padding:10px 12px}
+input:focus,select:focus,textarea:focus{border-color:var(--green2)}
+textarea{min-height:90px;resize:vertical}
+.field{margin-bottom:14px}
+.err{color:var(--alert);font-size:.85rem;margin-top:4px;min-height:1em}
+[aria-invalid="true"]{border-color:var(--alert)}
+.note{font-size:.86rem;color:var(--muted);margin:12px 0 0}
+.ok{display:none;background:var(--mint);border:1.5px solid var(--green2);border-radius:12px;padding:26px}
+.ok.show{display:block}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-bottom:10px;padding:2px 20px}
+summary{cursor:pointer;font-weight:700;padding:14px 0}
+details p{color:var(--muted);margin:0 0 14px}
+.contact{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.contact div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px}
+.contact b{display:block;font-size:.85rem;color:var(--muted);font-weight:600;margin-bottom:2px}
+.emerg{margin-top:22px;border:1.5px solid var(--alert);border-radius:10px;padding:14px 18px;font-size:.95rem}
+footer{padding:26px clamp(22px,5vw,64px);border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+
+@media (max-width:980px){
+  .shell{grid-template-columns:1fr}
+  aside.side{position:static;height:auto;overflow:visible;padding-top:calc(env(safe-area-inset-top,0px) + 24px)}
+  .side nav ul{display:flex;flex-wrap:wrap;gap:0 18px}.side nav a{border:0;padding:5px 0}
+  .side .meta{margin-top:0}
+  .facts{grid-template-columns:1fr 1fr}
+  section{padding:48px 22px}
+}
+@media (max-width:640px){.cards,.two,.contact,.f2{grid-template-columns:1fr}.row{grid-template-columns:1fr;gap:4px}.facts{grid-template-columns:1fr 1fr}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div class="shell">
+<aside class="side">
+  <div class="mono" aria-hidden="true">FN</div>
+  <div>
+    <h1>Dr. Fawad Nasir</h1>
+    <p class="role">Internal Medicine Physician</p>
+  </div>
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#services">What he offers</a></li>
+      <li><a href="#cv">Download CV</a></li>
+      <li><a href="#experience">Training and experience</a></li>
+      <li><a href="#credentials">Credentials</a></li>
+      <li><a href="#appointment">Appointments</a></li>
+      <li><a href="#faq">Questions</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <a class="btn" href="#appointment">Book an appointment</a>
+  <div class="meta">Khyber Teaching Hospital, Peshawar<br><a href="tel:+92345119460">+92 345 119460</a></div>
+</aside>
+
+<main id="main-content">
+<section id="overview">
+  <h2>Overview</h2>
+  <p class="lead">Dr. Fawad Nasir is a compassionate, evidence-based physician who cares for adults with complex medical conditions.</p>
+  <p>He has worked across internal medicine, pediatrics, general surgery, and orthopedics at a tertiary care teaching hospital, and is now completing four years of postgraduate training in Internal Medicine through the FCPS program. Those who work with him see a physician who collaborates closely with nurses, specialists, and allied health staff, and who explains diagnoses and plans to families in a clear, supportive way.</p>
+  <p>He is ECFMG certified, has passed USMLE Step 1 and Step 2 CK, and is seeking a residency position in the United States.</p>
+  <div class="facts">
+    <div class="fact"><b>ECFMG</b><span>Certified</span></div>
+    <div class="fact"><b>Step 1 and 2 CK</b><span>USMLE passed</span></div>
+    <div class="fact"><b>FCPS</b><span>Internal Medicine, since 2025</span></div>
+    <div class="fact"><b>3 languages</b><span>English, Urdu, Pashto</span></div>
+  </div>
+</section>
+
+<section id="services" class="alt"><div>
+  <h2>What Dr. Nasir offers</h2>
+  <p>Care is provided under attending supervision as part of his training. Services reflect the work described in his CV.</p>
+  <div class="cards">
+    <div class="card"><h3>Adult internal medicine consultation</h3><p>Detailed history, physical examination, differential diagnosis, and a clear management plan for adults with single or multi-system illness.</p></div>
+    <div class="card"><h3>Chronic disease follow-up</h3><p>Ongoing review of cardiovascular, respiratory, renal, endocrine, and infectious conditions, with plans that fit each patient.</p></div>
+    <div class="card"><h3>Acute illness assessment</h3><p>Prompt evaluation of new or worsening problems, with diagnostic tests ordered and reviewed as clinically indicated.</p></div>
+    <div class="card"><h3>Diagnostic coordination</h3><p>Workups arranged with laboratory and radiology services, with results explained in plain language.</p></div>
+    <div class="card"><h3>Bedside procedures and emergencies</h3><p>Lumbar puncture and other bedside procedures, plus BLS and ALS trained emergency stabilization.</p></div>
+    <div class="card"><h3>Professional and residency inquiries</h3><p>Program directors and colleagues can request a conversation about his training and application.</p></div>
+  </div>
+</div></section>
+
+<section id="cv">
+  <h2>Curriculum vitae</h2>
+  <div class="cvbox">
+    <div>
+      <p><b>Fawad Nasir, MD, Curriculum Vitae</b></p>
+      <p style="color:var(--muted)">Word document with his training, experience, certifications, research, and awards.</p>
+    </div>
+    <button class="btn" type="button" id="cvBtn">Download CV (.docx)</button>
+  </div>
+  <div class="cvmsg" id="cvMsg" role="status" aria-live="polite"></div>
+</section>
+
+<section id="experience" class="alt"><div>
+  <h2>Training and experience</h2>
+  <div class="row">
+    <div class="when">2025 to present</div>
+    <div><h3>Internal Medicine Trainee, FCPS</h3><p class="sub">Tertiary care referral hospital, four-year postgraduate program</p>
+      <ul class="plain">
+        <li>Provides inpatient and outpatient care to adults with complex, multi-system conditions.</li>
+        <li>Forms differential diagnoses and management plans under attending supervision.</li>
+        <li>Manages acute and chronic cardiovascular, respiratory, renal, endocrine, and infectious diseases.</li>
+        <li>Joins ward rounds, case discussions, morbidity and mortality meetings, and education sessions.</li>
+        <li>Performs bedside procedures, including lumbar puncture.</li>
+      </ul></div>
+  </div>
+  <div class="row">
+    <div class="when">2023 to 2024</div>
+    <div><h3>House Officer</h3><p class="sub">Khyber Teaching Hospital, Peshawar</p>
+      <ul class="plain">
+        <li>Documented assessments, interventions, medications, and treatment responses.</li>
+        <li>Ordered and evaluated diagnostic tests and planned treatment with attendings.</li>
+        <li>Performed emergency procedures, including BLS, and monitored ward patients.</li>
+        <li>Explained diagnoses and plans to patients and families with empathy.</li>
+      </ul>
+      <div class="chips"><span class="chip">Pediatric Medicine</span><span class="chip">Internal Medicine</span><span class="chip">General Surgery</span><span class="chip">Orthopedics and Traumatology</span></div></div>
+  </div>
+  <div class="row"><div class="when">2017 to 2023</div><div><h3>MBBS</h3><p class="sub" style="margin:0">Bachelor of Medicine, Bachelor of Surgery</p></div></div>
+  <div class="row"><div class="when">2015 to 2017</div><div><h3>Pre-Medical</h3></div></div>
+</div></section>
+
+<section id="credentials">
+  <h2>Credentials, research, and service</h2>
+  <div class="two">
+    <div>
+      <h3>Certifications</h3>
+      <ul class="plain"><li>ECFMG Certified</li><li>USMLE Step 1, passed</li><li>USMLE Step 2 CK, passed</li><li>Basic Life Support (BLS)</li><li>Advanced Life Support (ALS)</li></ul>
+      <h3>Awards</h3>
+      <ul class="plain"><li>Best House Officer in Pediatric Medicine</li><li>Best House Officer in Orthopedics and Traumatology</li></ul>
+      <h3>Membership</h3>
+      <ul class="plain"><li>American Society of Clinical Oncology (ASCO)</li></ul>
+    </div>
+    <div>
+      <h3>Publications</h3>
+      <ul class="plain">
+        <li>Effectiveness of Available Rehabilitative Services for Physically Handicapped People at a Locality in Peshawar, Pakistan.</li>
+        <li>Short-Term Clinical Outcomes in Spine Surgeries: A Descriptive Cross-Sectional Study in a Tertiary Care Hospital.</li>
+      </ul>
+      <h3>Community service</h3>
+      <ul class="plain">
+        <li>Emergency department volunteer, 2021</li>
+        <li>Kohistan flood response, free checkups, 2022</li>
+        <li>COVID-19 relief volunteer, 2019</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="appointment" class="alt"><div>
+  <h2>Book an appointment</h2>
+  <p>Choose an available day and time, then add your details. Your request is prepared as an email to Dr. Nasir, and his office confirms the final time by phone or email.</p>
+  <div class="book" id="bookWrap">
+    <div class="panel">
+      <h3>1. Choose a day</h3>
+      <p class="hint">The next two weeks. Crossed-out days are not available.</p>
+      <div class="days" id="days" role="group" aria-label="Available days"></div>
+    </div>
+    <div class="panel">
+      <h3>2. Choose a time</h3>
+      <p class="hint" id="slotHint">Select a day to see times.</p>
+      <div class="slots" id="slots" role="group" aria-label="Available times"></div>
+      <div class="sel" id="sel" aria-live="polite"></div>
+      <div class="err" id="e-slot" role="alert"></div>
+    </div>
+    <form class="panel" id="apptForm" novalidate>
+      <h3>3. Your details</h3>
+      <p class="hint">Please do not include detailed medical records.</p>
+      <div class="f2">
+        <div class="field"><label for="name">Full name</label><input id="name" autocomplete="name" required aria-describedby="e-name"><div class="err" id="e-name"></div></div>
+        <div class="field"><label for="phone">Phone number</label><input id="phone" type="tel" autocomplete="tel" required aria-describedby="e-phone"><div class="err" id="e-phone"></div></div>
+      </div>
+      <div class="f2">
+        <div class="field"><label for="email">Email address</label><input id="email" type="email" autocomplete="email" required aria-describedby="e-email"><div class="err" id="e-email"></div></div>
+        <div class="field"><label for="type">Reason for visit</label>
+          <select id="type" required aria-describedby="e-type"><option value="">Select a reason</option><option>General internal medicine consultation</option><option>Follow-up visit</option><option>Second opinion</option><option>Professional or residency inquiry</option></select>
+          <div class="err" id="e-type"></div></div>
+      </div>
+      <div class="field"><label for="notes">Notes (optional)</label><textarea id="notes"></textarea></div>
+      <button class="btn" type="submit">Send appointment request</button>
+    </form>
+    <div class="ok" id="ok" role="status" aria-live="polite" tabindex="-1">
+      <h3>Your email is ready to send</h3>
+      <p style="margin-top:8px">Your mail app opened with the request filled in. Send it to finish. If nothing opened, email <a href="mailto:Fawadn3@gmail.com">Fawadn3@gmail.com</a> or call +92 345 119460.</p>
+      <button class="btn out" type="button" id="again">Make another request</button>
+    </div>
+  </div>
+  <div class="emerg"><b>Emergency?</b> Do not use this form. Go to the nearest emergency department or call your local emergency number.</div>
+</div></section>
+
+<section id="faq">
+  <h2>Common questions</h2>
+  <details><summary>How does the appointment request work?</summary><p>You pick a day and time and fill in your details. The page opens an email addressed to Dr. Nasir with everything filled in. After you send it, his office confirms the final time by phone or email.</p></details>
+  <details><summary>Is my request confirmed right away?</summary><p>No. A request is not a confirmed booking until you hear back from the office.</p></details>
+  <details><summary>What should I bring to a visit?</summary><p>A photo ID, a list of your current medicines, and any earlier test reports or discharge papers.</p></details>
+  <details><summary>Does this website store my information?</summary><p>No. The form only prepares an email in your own mail app. Nothing is saved on this site.</p></details>
+  <details><summary>Can I request his CV?</summary><p>Yes. Use the download button above, or email the office for a copy.</p></details>
+</section>
+
+<section id="contact" class="alt"><div>
+  <h2>Contact</h2>
+  <div class="contact">
+    <div><b>Phone</b><a href="tel:+92345119460">+92 345 119460</a></div>
+    <div><b>Email</b><a href="mailto:Fawadn3@gmail.com">Fawadn3@gmail.com</a></div>
+    <div><b>Address</b>New Doctor Hostel, Khyber Teaching Hospital, Peshawar, Pakistan</div>
+  </div>
+</div></section>
+
+<footer><span>Dr. Fawad Nasir, MD. Internal Medicine Physician.</span><span>Peshawar, Pakistan</span></footer>
+</main>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* Update these values to match the actual appointment schedule. */
+  var schedule = {
+    openDays: [1, 2, 3, 4, 5, 6],
+    slots: ['9:00 AM', '10:00 AM', '11:00 AM', '4:00 PM', '5:00 PM', '6:00 PM'],
+    daysAhead: 14
+  };
+  var selectedDay = null;
+  var selectedSlot = null;
+  var getById = function (id) { return document.getElementById(id); };
+  var formatDate = function (date, options) { return date.toLocaleDateString('en-GB', options); };
+  var daysElement = getById('days');
+  var slotsElement = getById('slots');
+  var selectedElement = getById('sel');
+  var form = getById('apptForm');
+  var confirmation = getById('ok');
+  var bookingPanels = [daysElement.parentNode, slotsElement.parentNode, form];
+
+  function setPressed(container, selectedButton) {
+    Array.prototype.forEach.call(container.children, function (button) {
+      button.setAttribute('aria-pressed', button === selectedButton ? 'true' : 'false');
+    });
+  }
+
+  function createButton(label, detail) {
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'pick';
+    button.setAttribute('aria-pressed', 'false');
+    button.textContent = label;
+
+    if (detail) {
+      var detailElement = document.createElement('small');
+      detailElement.textContent = detail;
+      button.appendChild(detailElement);
+    }
+
+    return button;
+  }
+
+  function renderDays() {
+    daysElement.textContent = '';
+    var today = new Date();
+    today.setHours(12, 0, 0, 0);
+
+    for (var offset = 1; offset <= schedule.daysAhead; offset += 1) {
+      var date = new Date(today);
+      date.setDate(today.getDate() + offset);
+      var button = createButton(
+        formatDate(date, { weekday: 'short' }),
+        formatDate(date, { day: 'numeric', month: 'short' })
+      );
+      button.disabled = schedule.openDays.indexOf(date.getDay()) === -1;
+      button.addEventListener('click', function (chosenDate, chosenButton) {
+        return function () {
+          selectedDay = chosenDate;
+          selectedSlot = null;
+          setPressed(daysElement, chosenButton);
+          renderSlots();
+        };
+      }(date, button));
+      daysElement.appendChild(button);
+    }
+  }
+
+  function renderSlots() {
+    slotsElement.textContent = '';
+    getById('slotHint').textContent = 'Available times on ' +
+      formatDate(selectedDay, { weekday: 'long', day: 'numeric', month: 'long' }) + '.';
+
+    schedule.slots.forEach(function (slot) {
+      var button = createButton(slot);
+      button.addEventListener('click', function () {
+        selectedSlot = slot;
+        setPressed(slotsElement, button);
+        getById('e-slot').textContent = '';
+        selectedElement.textContent = 'Selected: ' +
+          formatDate(selectedDay, { weekday: 'long', day: 'numeric', month: 'long' }) +
+          ' at ' + slot;
+      });
+      slotsElement.appendChild(button);
+    });
+
+    selectedElement.textContent = '';
+  }
+
+  var validationRules = {
+    name: function (value) {
+      return value.trim().length > 1 || 'Enter your full name.';
+    },
+    phone: function (value) {
+      var phone = value.trim();
+      var digits = (phone.match(/\d/g) || []).length;
+      return (/^[+\d][\d\s\-()]{5,23}$/.test(phone) && digits >= 7) ||
+        'Enter a valid phone number with at least 7 digits.';
+    },
+    email: function (value) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim()) ||
+        'Enter an email address like name@example.com.';
+    },
+    type: function (value) {
+      return value !== '' || 'Select a reason for your visit.';
+    }
+  };
+
+  function validateField(id) {
+    var field = getById(id);
+    var message = validationRules[id](field.value);
+    var errorElement = getById('e-' + id);
+
+    if (message === true) {
+      errorElement.textContent = '';
+      field.removeAttribute('aria-invalid');
+      return true;
+    }
+
+    errorElement.textContent = message;
+    field.setAttribute('aria-invalid', 'true');
+    return false;
+  }
+
+  function getFieldValue(id) {
+    return getById(id).value.trim();
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    var firstInvalid = selectedDay && selectedSlot ? null : 'slot';
+
+    if (firstInvalid) {
+      getById('e-slot').textContent = 'Choose a day and a time above.';
+    }
+
+    Object.keys(validationRules).forEach(function (id) {
+      if (!validateField(id) && !firstInvalid) {
+        firstInvalid = id;
+      }
+    });
+
+    if (firstInvalid) {
+      var target = firstInvalid === 'slot' ? daysElement.parentNode : getById(firstInvalid);
+      target.scrollIntoView({ block: 'center' });
+      if (firstInvalid !== 'slot') {
+        target.focus();
+      }
+      return;
+    }
+
+    var requestedTime = formatDate(selectedDay, {
+      weekday: 'long',
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    }) + ' at ' + selectedSlot;
+    var body = 'Appointment request\n\n' +
+      'Name: ' + getFieldValue('name') + '\n' +
+      'Phone: ' + getFieldValue('phone') + '\n' +
+      'Email: ' + getFieldValue('email') + '\n' +
+      'Reason: ' + getFieldValue('type') + '\n' +
+      'Requested time: ' + requestedTime + '\n\n' +
+      'Notes: ' + (getFieldValue('notes') || 'None');
+    var mailto = 'mailto:Fawadn3@gmail.com?subject=' +
+      encodeURIComponent('Appointment request: ' + requestedTime) +
+      '&body=' + encodeURIComponent(body);
+
+    bookingPanels.forEach(function (panel) {
+      panel.style.display = 'none';
+    });
+    confirmation.classList.add('show');
+    confirmation.focus();
+    window.location.href = mailto;
+  }
+
+  function resetRequest() {
+    form.reset();
+    selectedDay = null;
+    selectedSlot = null;
+    selectedElement.textContent = '';
+    slotsElement.textContent = '';
+    getById('e-slot').textContent = '';
+    getById('slotHint').textContent = 'Select a day to see times.';
+
+    Object.keys(validationRules).forEach(function (id) {
+      getById('e-' + id).textContent = '';
+      getById(id).removeAttribute('aria-invalid');
+    });
+
+    renderDays();
+    bookingPanels.forEach(function (panel) {
+      panel.style.display = '';
+    });
+    confirmation.classList.remove('show');
+  }
+
+  Object.keys(validationRules).forEach(function (id) {
+    getById(id).addEventListener('blur', function () {
+      validateField(id);
+    });
+  });
+  form.addEventListener('submit', handleSubmit);
+  getById('again').addEventListener('click', resetRequest);
+  renderDays();
+
+  /* CV download */
+  var CV='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';
+  getById('cvBtn').addEventListener('click',function(){
+    var msg=getById('cvMsg');msg.textContent='';
+    try{
+      var bin=atob(CV),u=new Uint8Array(bin.length);
+      for(var i=0;i<bin.length;i++)u[i]=bin.charCodeAt(i);
+      var file=new Blob([u],{type:'application/vnd.openxmlformats-officedocument.wordprocessingml.document'});
+      var downloadUrl=URL.createObjectURL(file);
+      var link=document.createElement('a');
+      link.href=downloadUrl;
+      link.download='Fawad_Nasir_MD_CV.docx';
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      window.setTimeout(function(){URL.revokeObjectURL(downloadUrl)},1000);
+      msg.textContent='Your CV download should begin. If it does not, email Fawadn3@gmail.com to request a copy.';
+    }catch(error){
+      msg.textContent='The download could not be completed. Email Fawadn3@gmail.com to request a copy.';
+    }
+  });
+})();
+</script>
+</body>
+</html>
